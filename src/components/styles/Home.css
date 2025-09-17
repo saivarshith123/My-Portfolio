@@ -1,0 +1,50 @@
+.home-container {
+  text-align: center;
+}
+
+.main-title {
+  /* It will try to be 10vw, but won't go smaller than 2.5rem or larger than 4rem */
+  font-size: clamp(2.5rem, 10vw, 4rem);
+  font-weight: 700;
+  margin: 0;
+  /* ... keep the rest of the styles (background, animation, etc.) */
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--primary-color));
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-animation 4s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.subtitle {
+  font-size: clamp(1rem, 4vw, 1.5rem);
+  color: var(--on-surface-secondary);
+  margin: 20px 0 40px 0;
+  font-weight: 300;
+  padding: 0 10px;
+}
+
+.cta-button {
+  padding: 15px 35px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--on-primary);
+  background: linear-gradient(90deg, var(--primary-color), var(--primary-variant));
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+.cta-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(187, 134, 252, 0.3);
+}

@@ -1,0 +1,47 @@
+/* Define the color palette and root styles */
+:root {
+  --primary-color: #bb86fc; /* A vibrant purple */
+  --primary-variant: #3700b3;
+  --secondary-color: #03dac6; /* A bright teal */
+  --background-color: #121212; /* A deep, dark background */
+  --surface-color: #1e1e1e; /* Color for cards and surfaces */
+  --on-primary: #000000;
+  --on-surface: #ffffff;
+  --on-surface-secondary: #a3a3a3; /* For subtitles and less important text */
+}
+
+/* src/index.css */
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+
+  /* REMOVE THE BACKGROUND PROPERTIES FROM HERE */
+  /* background-image: url('/background.jpg'); */
+  /* background-size: cover; */
+  /* background-position: center; */
+  /* background-attachment: fixed; */
+  /* background-repeat: no-repeat; */
+  
+  /* Keep the fallback color and text color */
+  background-color: var(--background-color);
+  color: var(--on-surface);
+}
+
+/* Custom Scrollbar for a modern look (keep this as is) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--background-color);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-variant);
+}
