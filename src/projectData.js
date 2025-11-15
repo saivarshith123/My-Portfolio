@@ -68,6 +68,46 @@ const projectData = [
     title: "Power BI - Blinkit Business Analysis",
     description: "A business analysis of e-commerce and retail platforms like Blinkit using real-world data insights.",
     githubLink: "https://github.com/saivarshith123/Blinkit-Analysis.git"
+  },
+  {
+    title: "Dictonary App",
+    description: "This is a web dictionary app that searches for a word's definition, example, and audio playback using an API.",
+    githubLink: "https://github.com/saivarshith123/Dictionary-app.git"
+  },
+  {
+    title: "Glassmorphism CSS Generator",
+    description: "A simple web-based tool to create and customize the glassmorphism effect for your UI elements",
+    githubLink: "https://github.com/saivarshith123/css-glass-creator.git"
+  },
+  {
+    title: "2048 game",
+    description: "This is a sliding tile puzzle game where the objective is to combine numbered tiles to create a tile with the number 2048.",
+    githubLink: "https://github.com/saivarshith123/2048-Game.git"
+  },
+  {
+    title: "Credential Manager",
+    description: "This is a simple and secure web-based credential manager built using the MERN stack to help you store and manage your login information locally.",
+    githubLink: "https://github.com/saivarshith123/Credential-Manager-MongoDB.git"
+  },
+  {
+    title: "Drawing App",
+    description: "This is one webpage for the drawing anything and download that as the image",
+    githubLink: "https://github.com/saivarshith123/Drawing-app.git"
+  },
+  {
+    title: "Electric Clock",
+    description: "This is a simple digital clock application built using HTML, CSS, and JavaScript.",
+    githubLink: "https://github.com/saivarshith123/electric-clock.git"
+  },
+  {
+    title: "Flappy Bird",
+    description: "This is a clone of the popular Flappy Bird game where the player navigates a bird past a series of obstacles.",
+    githubLink: "https://github.com/saivarshith123/Flappy-Bird-Game.git"
+  },
+  {
+    title: "Hangman Game",
+    description: "This is a web-based version of the classic Hangman word-guessing game.",
+    githubLink: "https://github.com/saivarshith123/hangman-game.git"
   }
 ];
 
