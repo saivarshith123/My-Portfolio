@@ -17,6 +17,7 @@ body {
   font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-scroll-behavior: smooth;
   scroll-behavior: smooth;
 
   /* REMOVE THE BACKGROUND PROPERTIES FROM HERE */
