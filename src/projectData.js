@@ -112,7 +112,7 @@ const projectData = [
   {
     title: "Blood Bank Manegement System",
     description: "In emergencies, finding the right blood donor quickly can be a matter of life and death.",
-    githubLink: ""
+    githubLink: "https://github.com/saivarshith123/Blood-Bank-Management-System.git"
   },
   {
     title: "Power BI - Spotify analysis",
