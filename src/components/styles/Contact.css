@@ -1,32 +1,99 @@
+/* Container: Full screen, no scroll */
 .contact-container {
-  text-align: center;
-  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; 
+  padding-top: 20px;           /* REDUCED from 80px to 20px */
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
-.contact-container h2 {
-  font-size: 2.5rem;
-}
-
+/* Remove the Heading and Paragraph */
+.contact-container h2,
 .contact-container p {
-  color: var(--on-surface-secondary);
-  font-size: 1.1rem;
-  margin-bottom: 40px;
+  display: none;
 }
 
-.email-button {
-  padding: 15px 40px;
-  font-size: 1.1rem;
-  font-weight: 600;
-  text-decoration: none;
-  border-radius: 50px;
-  background-color: transparent;
+/* --- Form Styling --- */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 450px;
+  background: var(--surface-color);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  z-index: 10;
+}
+
+.contact-form label {
+  text-align: left;
   color: var(--secondary-color);
-  border: 2px solid var(--secondary-color);
-  transition: all 0.3s ease;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  margin-left: 5px;
 }
 
-.email-button:hover {
-  background-color: var(--secondary-color);
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  background-color: rgba(18, 18, 18, 0.8);
+  border: 2px solid #333;
+  border-radius: 12px;
+  color: var(--on-surface);
+  font-family: inherit;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+/* Focus Effects */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  background-color: #1a1a1a;
+  box-shadow: 0 0 15px rgba(187, 134, 252, 0.2);
+  transform: translateY(-2px);
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #555;
+}
+
+/* Submit Button */
+.contact-form .email-button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 50px;
+  background: linear-gradient(90deg, var(--primary-color), var(--primary-variant));
   color: var(--on-primary);
-  box-shadow: 0 5px 15px rgba(3, 218, 198, 0.3);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(187, 134, 252, 0.3);
+}
+
+.contact-form .email-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(187, 134, 252, 0.5);
+  background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
 }
