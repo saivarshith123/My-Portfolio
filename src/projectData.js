@@ -108,6 +108,26 @@ const projectData = [
     title: "Hangman Game",
     description: "This is a web-based version of the classic Hangman word-guessing game.",
     githubLink: "https://github.com/saivarshith123/hangman-game.git"
+  },
+  {
+    title: "Blood Bank Manegement System",
+    description: "In emergencies, finding the right blood donor quickly can be a matter of life and death.",
+    githubLink: ""
+  },
+  {
+    title: "Power BI - Spotify analysis",
+    description: "This project involves the creation of an interactive Spotify Dashboard using Microsoft Power BI",
+    githubLink: "https://github.com/saivarshith123/Spotify-Dashboard-Power-BI.git"
+  },
+  {
+    title: "Netflix Content Clustering",
+    description: "This project utilizes Unsupervised Machine Learning to analyze the Netflix dataset and group similar movies and TV shows into distinct clusters based on their content descriptions",
+    githubLink: "https://github.com/saivarshith123/netflix-kmeans-clustering.git"
+  },
+  {
+    title: "Data Analyst AI Agent",
+    description: "A Streamlit-based application that utilizes Google's Gemini models to act as an intelligent data analyst",
+    githubLink: "https://github.com/saivarshith123/Data-Analyst-AI-Agent.git"
   }
 ];
 
