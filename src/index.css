@@ -19,17 +19,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-scroll-behavior: smooth;
   scroll-behavior: smooth;
-
-  /* REMOVE THE BACKGROUND PROPERTIES FROM HERE */
-  /* background-image: url('/background.jpg'); */
-  /* background-size: cover; */
-  /* background-position: center; */
-  /* background-attachment: fixed; */
-  /* background-repeat: no-repeat; */
   
-  /* Keep the fallback color and text color */
   background-color: var(--background-color);
   color: var(--on-surface);
+
+  /* ADD THIS LINE TO FIX THE BLACK STRIP */
+  overflow-x: hidden; 
+  width: 100%;
 }
 
 /* Custom Scrollbar for a modern look (keep this as is) */
