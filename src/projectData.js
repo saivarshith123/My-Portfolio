@@ -85,11 +85,6 @@ const projectData = [
     githubLink: "https://github.com/saivarshith123/2048-Game.git"
   },
   {
-    title: "Credential Manager",
-    description: "This is a simple and secure web-based credential manager built using the MERN stack to help you store and manage your login information locally.",
-    githubLink: "https://github.com/saivarshith123/Credential-Manager-MongoDB.git"
-  },
-  {
     title: "Drawing App",
     description: "This is one webpage for the drawing anything and download that as the image",
     githubLink: "https://github.com/saivarshith123/Drawing-app.git"
