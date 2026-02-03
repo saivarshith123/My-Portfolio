@@ -4,7 +4,7 @@ import { FaFileAlt } from 'react-icons/fa'; // Import a file icon
 
 const Home = () => {
   // Paste your resume link here
-  const resumeLink = "https://www.google.com";
+  const resumeLink = "https://drive.google.com/file/d/1dlkzBdCemc7yqSJfbe4Stii3JPUSybIM/view?usp=drive_link";
 
   return (
     <div className="home-container">
