@@ -123,6 +123,11 @@ const projectData = [
     title: "Data Analyst AI Agent",
     description: "A Streamlit-based application that utilizes Google's Gemini models to act as an intelligent data analyst",
     githubLink: "https://github.com/saivarshith123/Data-Analyst-AI-Agent.git"
+  },
+  {
+    title: "Olympic-Analytics-2024-PowerBI",
+    description: "A Power BI dashboard analyzing the performance of countries in the 2024 Olympics, providing insights into medal counts and athlete achievements.",
+    githubLink: "https://github.com/saivarshith123/Olympic-Analytics-2024-Power-BI.git"
   }
 ];
 
