@@ -1,48 +1,153 @@
+
 import React from 'react';
 import './styles/Skills.css';
-// Importing relevant icons for the new categories
-import { FaCode, FaCogs, FaTools } from 'react-icons/fa';
+import {
+  FaCode,
+  FaDatabase,
+  FaChartBar,
+  FaBrain,
+  FaTools,
+  FaCogs
+} from 'react-icons/fa';
 
-// Updated skills object based on your list
 const skills = {
-  languagesAndDatabases: [
-    'Python', 'Java', 'HTML5', 'CSS3', 'JavaScript', 'MySQL', 'Oracle'
+  programming: [
+    'Python',
+    'SQL',
+    'Java'
   ],
-  frameworks: [
-    'Blender', 'React', 'NumPy', 'Pandas', 'Matplotlib', 'Bootstrap'
+
+  dataEngineering: [
+    'PySpark',
+    'ETL',
+    'Data Transformation',
+    'Data Cleaning',
+    'Data Modeling'
   ],
+
+  dataAnalysis: [
+    'Pandas',
+    'NumPy',
+    'Excel',
+    'Power Query',
+    'Matplotlib'
+  ],
+
+  databases: [
+    'PostgreSQL',
+    'MySQL',
+    'SQL Server',
+    'Oracle',
+    'MongoDB'
+  ],
+
+  dataVisualization: [
+    'Power BI',
+    'Tableau',
+    'DAX',
+    'Matplotlib'
+  ],
+
+  machineLearning: [
+    'Supervised Learning',
+    'Linear Regression',
+    'Logistic Regression',
+    'Decision Trees',
+    'Support Vector Machines',
+    'K-Means Clustering',
+    'Hierarchical Clustering',
+    'PCA',
+    'Model Evaluation'
+  ],
+
   tools: [
-    'GitHub', 'Google Cloud', 'Jupyter', 'Visual Studio Code', 'VirtualBox', 'Figma', 'Cisco', 'Power BI'
+    'Git',
+    'GitHub',
+    'Jupyter Notebook',
+    'Visual Studio Code'
+  ],
+
+  analytics: [
+    'Exploratory Data Analysis',
+    'Statistical Analysis',
+    'Dashboard Development',
+    'KPI Reporting'
   ]
 };
 
 const Skills = () => {
+  const categories = [
+    {
+      title: 'Programming Languages',
+      icon: <FaCode />,
+      items: skills.programming
+    },
+    {
+      title: 'Data Engineering',
+      icon: <FaCogs />,
+      items: skills.dataEngineering
+    },
+    {
+      title: 'Data Analysis',
+      icon: <FaChartBar />,
+      items: skills.dataAnalysis
+    },
+    {
+      title: 'Databases',
+      icon: <FaDatabase />,
+      items: skills.databases
+    },
+    {
+      title: 'Data Visualization & BI',
+      icon: <FaChartBar />,
+      items: skills.dataVisualization
+    },
+    {
+      title: 'Machine Learning',
+      icon: <FaBrain />,
+      items: skills.machineLearning
+    },
+    {
+      title: 'Tools & Platforms',
+      icon: <FaTools />,
+      items: skills.tools
+    },
+    {
+      title: 'Analytics Concepts',
+      icon: <FaCogs />,
+      items: skills.analytics
+    }
+  ];
+
   return (
-    <div className="skills-container">
+    <section className="skills-container" id="skills">
       <h2>Technical Skills</h2>
-      
-      <div className="skills-category">
-        <h3><FaCode /> Languages & Databases</h3>
-        <div className="skills-grid">
-          {skills.languagesAndDatabases.map((skill, index) => <div className="skill-card" key={index}>{skill}</div>)}
-        </div>
-      </div>
+      <p className="skills-subtitle">
+        Technologies and tools I use to transform data
+        into meaningful insights and solutions.
+      </p>
 
-      <div className="skills-category">
-        <h3><FaCogs /> Frameworks & Libraries</h3>
-        <div className="skills-grid">
-          {skills.frameworks.map((skill, index) => <div className="skill-card" key={index}>{skill}</div>)}
-        </div>
-      </div>
+      <div className="skills-categories">
+        {categories.map((category, index) => (
+          <div className="skills-category" key={index}>
+            <h3>
+              <span className="category-icon">
+                {category.icon}
+              </span>
+              {category.title}
+            </h3>
 
-      <div className="skills-category">
-        <h3><FaTools /> Tools & Platforms</h3>
-        <div className="skills-grid">
-          {skills.tools.map((skill, index) => <div className="skill-card" key={index}>{skill}</div>)}
-        </div>
+            <div className="skills-grid">
+              {category.items.map((skill, skillIndex) => (
+                <div className="skill-card" key={skillIndex}>
+                  {skill}
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
       </div>
-
-    </div>
+    </section>
   );
 };
 

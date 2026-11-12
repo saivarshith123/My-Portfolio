@@ -1,28 +1,30 @@
+
 import React from 'react';
 import './styles/Home.css';
-import { FaFileAlt } from 'react-icons/fa'; // Import a file icon
+import { FaFileAlt } from 'react-icons/fa';
 
 const Home = () => {
-  // Paste your resume link here
-  const resumeLink = "https://drive.google.com/file/d/182xxH7DkeNIgmZe45myrPY4cf5_hv9Zr/view?usp=drive_link";
+  const resumeLink = '/Gotam_Sai_Varshith.pdf';
 
   return (
     <div className="home-container">
       <h1 className="main-title">
         Hello, I'm <br /> Gotam Sai Varshith
       </h1>
+
       <h2 className="subtitle">
-        A versatile developer turning complex problems into elegant, intelligent solutions.
+        Transforming complex data into actionable insights through
+        analytics, business intelligence, and machine learning.
       </h2>
 
-      {/* Updated button code */}
-      <a 
-        href={resumeLink} 
-        className="cta-button" 
-        target="_blank" 
+      <a
+        href={resumeLink}
+        className="cta-button"
+        target="_blank"
         rel="noopener noreferrer"
       >
-        <FaFileAlt style={{ marginRight: '8px' }} /> View Resume
+        <FaFileAlt style={{ marginRight: '8px' }} />
+        View Resume
       </a>
     </div>
   );

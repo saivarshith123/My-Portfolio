@@ -10,6 +10,7 @@
   /* ... keep the rest of the styles (background, animation, etc.) */
   background: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--primary-color));
   background-size: 200% 200%;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: gradient-animation 4s ease infinite;

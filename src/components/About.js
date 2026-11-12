@@ -6,8 +6,7 @@ const About = () => {
     <div className="about-container">
       <h2>About</h2>
       <p className="about-text">
-        Focused and enthusiastic developer with a keen interest in software development and artificial intelligence. By comprehensive exposure to the underlying concepts and applying them vividly to various projects, my love for these domains came into being. I am a passionate individual who thrives to build and apply algorithms to solve real-world industry problems.
-      </p>
+I am a Computer Science graduate with a strong interest in Data Analytics, Business Intelligence, and Machine Learning. Skilled in Python, SQL, Power BI, Excel, and Tableau, I enjoy exploring complex datasets, uncovering meaningful patterns, and transforming raw data into actionable insights. Through academic projects and internship experiences, I have gained hands-on experience in data cleaning, ETL, exploratory data analysis, dashboard development, and machine learning. I am passionate about leveraging data-driven approaches to solve real-world business problems and support smarter decision-making.      </p>
 
       <ul className="personal-details">
         <li><strong>Birthday:</strong> 8 March 2005</li>
